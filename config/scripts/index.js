@@ -42,6 +42,10 @@ function handleOnClickOnButtons(event){
 
     writeOnVisor(buttonValue);
 
+  }else{
+
+    eraseVisor();
+    
   }
 
 }
@@ -49,5 +53,11 @@ function handleOnClickOnButtons(event){
 function writeOnVisor(_digit) {
 
     visorEl.innerHTML += _digit;
+
+}
+
+function eraseVisor(){
+
+  visorEl.innerHTML = "";
 
 }
